@@ -1,0 +1,15 @@
+.ChoiceGroup {
+  display: inline-block;
+  padding: 5px;
+  margin: 1px;
+  border: 2px solid;
+  border-top-width: 10px;
+}
+
+.correct {
+  border-color: green;
+}
+
+.incorrect {
+  border-color: red;
+}

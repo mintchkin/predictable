@@ -1,24 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import ChoiceList from "ChoiceList";
+import RestartButton from "RestartButton";
+
+const sampleChoices = [["U", "U"], ["U", "D"], ["D", "U"], ["D", "D"]];
 
 class App extends Component {
+  state = {
+    choices: sampleChoices
+  };
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <ChoiceList choices={this.state.choices} />
+          <RestartButton handler={e => this.setState({ choices: [] })} />
         </header>
       </div>
     );
