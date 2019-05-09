@@ -1,4 +1,8 @@
 .RestartButton {
-  color: white;
-  text-decoration: none;
+  composes: sharedStyles from "../variables.css";
+
+  padding: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }

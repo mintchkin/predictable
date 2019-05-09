@@ -14,8 +14,8 @@ const ChoiceGroup = ({ choice, guess }) => {
 
 const ChoiceList = ({ choices }) => (
   <div>
-    {choices.map(([choice, guess]) => (
-      <ChoiceGroup choice={choice} guess={guess} />
+    {choices.map(([choice, guess], index) => (
+      <ChoiceGroup key={index} choice={choice} guess={guess} />
     ))}
   </div>
 );

@@ -1,0 +1,16 @@
+/* Colors */
+@value backgroundColor: #282c34;
+@value textColor: white;
+
+/* Sizes */
+@value textSize: calc(10px + 2vmin);
+
+/* Font */
+@value textFont: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+.sharedStyles {
+  background-color: backgroundColor;
+  color: textColor;
+  font-size: textSize;
+  font-family: textFont;
+}

@@ -1,0 +1,9 @@
+.PredictorSelector {
+  composes: sharedStyles from "../variables.css";
+
+  padding: 2px;
+}
+
+.predictorOption {
+  composes: sharedStyles from "../variables.css";
+}

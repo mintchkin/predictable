@@ -1,8 +1,10 @@
 import React from "react";
-import styles from "./RestartButton.module.css"
+import styles from "./RestartButton.module.css";
 
 const RestartButton = ({ handler }) => (
-  <a href="#" className={styles.RestartButton} onClick={handler}>Restart</a>
+  <button className={styles.RestartButton} onClick={handler}>
+    Restart
+  </button>
 );
 
 export default RestartButton;
